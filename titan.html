@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titan Watches</title>
+    <link rel="stylesheet" type="text/css" href="designs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .gallery{
+            background-color: #696969; 
+        }
+
+        .buttons{
+            background-color: #fdf9f9;
+            float:right;
+            border-radius: 0;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+    <body>
+
+        <button class="buttons">
+            <span><a href=form.html>Add to cart</a></span>
+            <div class="cart">
+            <svg viewBox="0 0 50 20">
+            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+            </svg>
+            </div>
+            </button>
+
+
+        <header>DESIGNS</header>
+    <div class="header">
+        <ul class="navbar">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women Watches</a></li>
+            <li><a href="men.html">Men Watches</a></li>
+            <li><a href="apple.html">Apple's Watches</a></li>
+            <li><a href="#titan">Titan Watches</a></li>
+            <li><a href="Digital.html">Digital Watches</a></li>
+            <li><a href="Analog.html">Analog Watches</a></li>
+             <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+       <div class="container" id="titan">  
+        <div class="gallery">
+            <img src="assests/T3.jpg"  alt="titan">
+            <h3>Golden</h3>
+            <p class="price"> Rs8000</p>
+             <p ><button>
+             <a href="form.html">BUY NOW</a></button></p>
+
+        </div>
+        
+         <div class="gallery">
+            <img  src="assests/T5.jpg"  alt="titan">
+             <h3>Leather</h3>
+             <p class="price"> Rs12,960</p> 
+             <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+        <div class="gallery">
+            <img  src="assests/T6.jpg"  alt="titan">
+             <h3>For Couples</h3>
+            <p class="price"> Rs15,000</p>
+             <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+         
+        
+         <div class="gallery">
+            <img  src="assests/T7.jpg"  alt="titan">
+             <h3>Golden</h3>
+             <p class="price"> Rs20,960</p>
+              <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+         <div class="gallery">
+            <img  src="assests/T1.jpeg"  alt="titan">
+             <h3>Blues Titan</h3>
+             <p class="price"> Rs25,000</p>
+              <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+         <div class="gallery">
+            <img src="assests/T2.jpg" alt="titan">
+             <h3>For Couples</h3>
+             <p class="price"> Rs30,000</p>
+              <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+         <div class="gallery">
+            <img src="assests/T4.jpg"  alt="titan">
+             <h3>Textured</h3>
+             <p class="price"> Rs14,500</p>
+              <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+         <div class="gallery">
+            <img src="assests/T8.jpg" alt="titan">
+             <h3>Border of colors</h3>
+             <p class="price"> Rs18,900</p>
+              <p ><button><a href="form.html">BUY NOW</a></button></p>
+        </div>
+        
+        
+    </div>
+    <div class="contact" id="contact">
+    <h2><span>Contact</span></h2>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div><hr>
+        <footer>
+        <span>Copyright&#169 2022 | All Rights Reserved</span>
+        </footer>
+
+        <script type="text/javascript">
+            function incrementValue()
+            {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if(value<10){
+                    value++;
+                        document.getElementById('number').value = value;
+                }
+            }
+            function decrementValue()
+            {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if(value>1){
+                    value--;
+                        document.getElementById('number').value = value;
+                }
+            
+            }
+            </script> 
+</body>
+</html>

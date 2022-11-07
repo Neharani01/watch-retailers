@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Watch Retailers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!---navigation start--->
+    <nav>
+      <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">Watch Retailers</div>
+      <div class="nav-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="men.html">Catagory</a></li>
+              <li><a href="#designs">Order Now</a></li>
+              <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="search-icon">
+       <span class="fas fa-search"></span>
+      </div>
+     <div class="cancel-icon">
+      <span class="fas fa-times"></span>
+     </div>
+     <form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+<!---iamges start--->
+<div class="slider">
+  <div class="sliderchild">
+    <div class="imagecon"><span class="animate__animated animate__zoomIn"></span></div>
+    <div class="imagecon"><span class="animate__animated animate__zoomIn"></span></div>
+    <div class="imagecon"></div>
+    <div class="imagecon"></div>
+    <div class="imagecon"></div>
+  </div>
+</div>
+<div class="offer">
+  <h1 class="animate__animated animate__flash animate__delay-1s animate__infinite animate__slower">20% off</h1>
+  <h4>from Oct 8- Nov 10</h4>
+</div>
+-content start-
+<div  class="designs" id="designs">
+  <div class="pics">
+  <div class="box zone">
+  <img src="assests/C1.jpeg">
+  <p>Unlike diamonds, watches were practical. They were for people on the run, people with appointments to keep and schedules to meet.<br>
+    GET THE BEST WATCHES FOR WOMEN.
+  </p>
+  <center><button class="view"><a href="women.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="assests/C2.jpeg">
+  <p>  People create all kind of fancy watches and clocks, never stopping to realize they're building monuments to the greatest of all thieves..
+    <br> GET THE BEST WATCHES FOR MEN.
+  </p>
+  <center><button  class="view"><a href="Analog.html">View More</a></button></center>
+  </div>
+  
+  <div class="box zone">
+  <img src="assests/C3.jpeg">
+  <p>Now without wasting any more time as time is very precious, let’s begin with the best list of new wristwatch for everyone in the town.
+    <br>
+
+    <br>GET THE BEST WATCHES IN TOWN</p>
+  <center><button class="view"><a href="men.html">View more</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="assests/c4.jpeg">
+  <p>My father didn't tell me how to live;
+    he lived, and let me watch him do it”
+  </p><center><button class="view"><a href="men.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="assests/c5.jpeg">
+  <p>The time would not pass. Somebody was playing with the clocks, and not only the electronic clocks but the wind-up kind too. The second hand on my watch would twitch once, and a year would pass, and then it would twitch again.
+    <br>
+    <br>
+    WATCHES FOR EVERYONE
+  </p><center><button class="view"><a href="digital.html">View More</a></button></center>
+  </div>
+  
+  
+  <div class="box zone">
+  <img src="assests/c6.jpeg">
+  <p>Time passes, it must pass, but I have no more assurance of moving through time than I have that I am moving through space. 
+    <br>
+    <br>
+    GET THE AMAZING EXPERIENCE
+  </p><center><button class="view"><a href="titan.html">View More</a></button></center>
+  </div>
+  </div>
+    </div>
+    <marquee>Thankyou for Visiting our site.For more information Contact Us</marquee>
+<!---footer start--->
+<div class="contact" id="contact">
+    <h2><span>Contact</span></h2>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+  </div><hr>
+  <footer>
+    <span>Copyright&#169 2022 | All Rights Reserved</span>
+  </footer>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+
+    
+  </script>
+
+  </body>
+</html>
